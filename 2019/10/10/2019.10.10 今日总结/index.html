@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <meta name="author" content="John Doe">
+  
+  
+    <meta name="description" content="2019.10.10 今日总结一、自定义模块
+
+
+模块定义
+模块导出
+
+
+
+定义变量和方法
+module.exports或者exprorts
+
+
+① module.exports 和 exports 的区别
+两者开始时指向相同
+模块会根据前者指向的对象进行导出
+注意：后者一旦进行赋值就会指向新的对象，模块不会根据新对象进行导出
+
+二、第三方模块
+在npm上进行安装，导出模块和原生模块一样只写名字不">
+  
+  <meta name="description" content="2019.10.10 今日总结一、自定义模块   模块定义 模块导出    定义变量和方法 module.exports或者exprorts   ① module.exports 和 exports 的区别 两者开始时指向相同 模块会根据前者指向的对象进行导出 注意：后者一旦进行赋值就会指向新的对象，模块不会根据新对象进行导出  二、第三方模块 在npm上进行安装，导出模块和原生模块一样只写名字不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/10/10/2019.10.10 今日总结/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="2019.10.10 今日总结一、自定义模块   模块定义 模块导出    定义变量和方法 module.exports或者exprorts   ① module.exports 和 exports 的区别 两者开始时指向相同 模块会根据前者指向的对象进行导出 注意：后者一旦进行赋值就会指向新的对象，模块不会根据新对象进行导出  二、第三方模块 在npm上进行安装，导出模块和原生模块一样只写名字不">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-10T07:57:15.961Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="2019.10.10 今日总结一、自定义模块   模块定义 模块导出    定义变量和方法 module.exports或者exprorts   ① module.exports 和 exports 的区别 两者开始时指向相同 模块会根据前者指向的对象进行导出 注意：后者一旦进行赋值就会指向新的对象，模块不会根据新对象进行导出  二、第三方模块 在npm上进行安装，导出模块和原生模块一样只写名字不">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+</html>
+<body>
+  <div class="wrapper">
+    <header id="header">
+  <div class="title">
+    <h1><a href="/">Hexo</a></h1>
+    <p><a href="/"></a></p>
+  </div>
+  <nav class="nav">
+    <ul>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/archives">Archives</a></li>
+      
+      
+        <li><a href="/atom.xml">RSS</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2019/10/10/2019.10.10 今日总结/">
+  <time datetime="2019-10-10T07:57:15.878Z">
+    2019-10-10
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h3 id="2019-10-10-今日总结"><a href="#2019-10-10-今日总结" class="headerlink" title="2019.10.10 今日总结"></a>2019.10.10 今日总结</h3><h5 id="一、自定义模块"><a href="#一、自定义模块" class="headerlink" title="一、自定义模块"></a>一、自定义模块</h5><table>
+<thead>
+<tr>
+<th align="center">模块定义</th>
+<th align="center">模块导出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">定义变量和方法</td>
+<td align="center">module.exports或者exprorts</td>
+</tr>
+</tbody></table>
+<h6 id="①-module-exports-和-exports-的区别"><a href="#①-module-exports-和-exports-的区别" class="headerlink" title="① module.exports 和 exports 的区别"></a>① module.exports 和 exports 的区别</h6><ol>
+<li>两者开始时指向相同</li>
+<li>模块会根据前者指向的对象进行导出</li>
+<li>注意：后者一旦进行赋值就会指向新的对象，模块不会根据新对象进行导出</li>
+</ol>
+<h5 id="二、第三方模块"><a href="#二、第三方模块" class="headerlink" title="二、第三方模块"></a>二、第三方模块</h5><ol>
+<li><p>在npm上进行安装，导出模块和原生模块一样只写名字不写路径</p>
+</li>
+<li><p>nrm 用于切换npm镜像源</p>
+<h6 id="nrm使用方法"><a href="#nrm使用方法" class="headerlink" title="nrm使用方法"></a>nrm使用方法</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ nrm ls</span><br><span class="line">$ nrm use 镜像源地址</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h5 id="三、express框架"><a href="#三、express框架" class="headerlink" title="三、express框架"></a>三、express框架</h5><ol>
+<li><p>能更方便的使用node.js </p>
+</li>
+<li><p>使用方法</p>
+<ol>
+<li><p>安装express</p>
+</li>
+<li><p>导入模块</p>
+</li>
+<li><p>创建并调用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app = express();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</li>
+</ol>
+<h5 id="四、express新方法"><a href="#四、express新方法" class="headerlink" title="四、express新方法"></a>四、express新方法</h5><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">app.get(参数，回调函数)</td>
+<td align="center">app.send(字符串)</td>
+<td align="center">app.listen(端口号，回调函数)</td>
+</tr>
+</tbody></table>
+<h5 id="五、托管静态资源"><a href="#五、托管静态资源" class="headerlink" title="五、托管静态资源"></a>五、托管静态资源</h5><ol>
+<li>用新方法来让资源收发代码写起来更容易</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">设置请求对应的处理函数</span><br><span class="line">app.use([/前缀,]express.static(&apos;文件名&apos;))</span><br></pre></td></tr></table></figure>
+
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2019 <a href="/">John Doe</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>
