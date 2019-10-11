@@ -60,6 +60,75 @@
   <header>
     
       <div class="icon"></div>
+      <a href="/2019/10/11/2019.10.11 今日总结/">
+  <time datetime="2019-10-11T09:09:34.091Z">
+    2019-10-11
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2019/10/11/2019.10.11 今日总结/"></a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h4 id="10月11日-今日总结"><a href="#10月11日-今日总结" class="headerlink" title="10月11日 今日总结"></a>10月11日 今日总结</h4><h5 id="什么是路由"><a href="#什么是路由" class="headerlink" title="什么是路由"></a>什么是路由</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//根据设置好的url和类型判断用户是否匹配 如果匹配成功执行后续函数</span><br><span class="line">//例如</span><br><span class="line">use(&apos;/&apos;,(req,res) =&gt; &#123;&#125;)</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">res.write()方法</th>
+<th align="center">res.json()方法</th>
+<th align="center">next()方法</th>
+<th align="center">arr.include()方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">用来向响应体里面添加内容</td>
+<td align="center">将对象转成json字符串，并自动设置响应头</td>
+<td align="center">如果当前路由没有被调用会执行下一个路由</td>
+<td align="center">判断arr数组内是否含有括号内的元素</td>
+</tr>
+</tbody></table>
+<h5 id="参数的存放"><a href="#参数的存放" class="headerlink" title="参数的存放"></a>参数的存放</h5><table>
+<thead>
+<tr>
+<th align="center">参数在请求行内</th>
+<th align="center">参数在请求体内</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">req.query</td>
+<td align="center">req.body</td>
+</tr>
+</tbody></table>
+<h5 id="Multer模块"><a href="#Multer模块" class="headerlink" title="Multer模块"></a>Multer模块</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//可以将文件上传到指定文件夹</span><br><span class="line">var upload = multer(&#123; dest: &apos;文件夹名/&apos; &#125;)</span><br><span class="line">app.post(&apos;/profile&apos;, upload.single(&apos;avatar&apos;), function (req, res, next) &#123;&#125;)</span><br><span class="line">//input 控件 name 必须 = &apos;avatar&apos;</span><br></pre></td></tr></table></figure>
+
+<h5 id="RESTful"><a href="#RESTful" class="headerlink" title="RESTful"></a>RESTful</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//指的是用同一个接口名 不同请求方式 实现不同功能</span><br><span class="line">post(&apos;/&apos;,(req,res)=&gt;&#123;添加功能&#125;)</span><br><span class="line">get(&apos;/&apos;,(req,res)=&gt;&#123;查询功能&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//本质上是一个函数</span><br><span class="line">(req,res,next) =&gt; &#123;&#125;</span><br><span class="line">用来使代码更好分类更好管理</span><br><span class="line">特点就是有next参数</span><br></pre></td></tr></table></figure>
+
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
       <a href="/2019/10/10/2019.10.10 今日总结/">
   <time datetime="2019-10-10T07:57:15.878Z">
     2019-10-10
